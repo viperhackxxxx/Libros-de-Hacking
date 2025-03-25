@@ -1,0 +1,43 @@
+Caracteres, Headers y Otros Elementos Utilizados en un 403 Bypass
+A continuación, se describen algunos de los caracteres, headers y técnicas que podrían ser utilizados en un intento de bypass de un código 403.
+
+1. Manipulación de URL
+Caracteres Especiales:
+.. (punto y punto): Para intentar acceder a directorios superiores.
+%20 (espacio): Para manipular parámetros y rutas.
+? y &: Para añadir o modificar parámetros de consulta.
+2. Headers HTTP
+User-Agent:
+
+Cambiar el User-Agent para simular diferentes navegadores o dispositivos. Algunos servidores pueden tener reglas específicas basadas en este header.
+Referer:
+
+Manipular el header Referer para hacer que parezca que la solicitud proviene de una fuente autorizada.
+Authorization:
+
+Si hay un sistema de autenticación, intentar inyectar tokens o credenciales en el header Authorization.
+Cookie:
+
+Modificar o añadir cookies que puedan contener información de sesión o permisos.
+3. Métodos HTTP
+Uso de Métodos Alternativos:
+Algunos servidores pueden estar configurados para responder de manera diferente a métodos como GET, POST, PUT, DELETE, etc. Probar diferentes métodos puede revelar recursos ocultos.
+4. Explotación de Parámetros
+Inyección de Parámetros:
+
+Añadir parámetros adicionales que no están documentados o que el servidor no espera.
+Manipulación de Datos:
+
+Modificar datos en formularios o solicitudes para intentar acceder a recursos restringidos.
+5. Técnicas de Proxy y VPN
+Uso de Proxies:
+
+Cambiar la dirección IP mediante proxies para eludir restricciones basadas en IP.
+VPN:
+
+Utilizar una VPN para ocultar la IP real y simular accesos desde diferentes ubicaciones geográficas.
+6. Scripts y Automatización
+Herramientas de Automatización:
+Utilizar herramientas como cURL, Postman o scripts en Python (con bibliotecas como requests) para automatizar solicitudes y modificaciones.
+Consideraciones Finales
+Aunque estas técnicas pueden ser discutidas en un contexto académico o de seguridad, es fundamental enfatizar que cualquier intento de bypass sin permiso es ilegal y puede tener graves consecuencias. La seguridad informática debe ser practicada de manera ética y responsable.
